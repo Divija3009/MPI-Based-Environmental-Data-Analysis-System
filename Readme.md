@@ -16,17 +16,17 @@ Hotspot Detection – Identifies clusters of pollution intensity using geospatia
 
 # Build Steps
 
-# Compile Analysis 1
+## Compile Analysis 1
 ```
 mpic++ -O3 -fopenmp loadData.cpp analyzeData.cpp analyzeHotspot.cpp main.cpp -o main.exe
 ```
 
-# Compile Analysis 2
+## Compile Analysis 2
 ```
 mpic++ -O3 -fopenmp loadDataHotspot.cpp analyzeHotspot.cpp main2.cpp -o main2.exe
 ```
 
-# Run with multiple processes
+## Run with multiple processes
 ```
 mpirun -np 4 ./main.exe
 mpirun -np 4 ./main2.exe
